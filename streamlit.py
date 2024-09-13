@@ -4,6 +4,8 @@ import pandas as pd
 import pickle
 import re, nltk
 
+nltk.download('punkt_tab')
+
 with open('lr_model.pkl', 'rb') as f:
     lr_model = pickle.load(f)
 
