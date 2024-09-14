@@ -34,6 +34,7 @@ st.write("## Welcome to course sentiment analyser")
 rated_courses = pd.read_csv('ratedCourses.csv', index_col = 0)
 
 course = st.text_input("What course would you like to rate?", max_chars = 12)
+course = ''.join(course.split()).upper()
 user_input2 = st.text_input(f"What did you think about {course}", max_chars = 100)
 st.write('\n')
 button1 = st.button("Click here for the model to provide your sentiment.")
