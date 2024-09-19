@@ -35,7 +35,7 @@ rated_courses = pd.read_csv('ratedCourses.csv', index_col = 0)
 
 course = st.text_input("What course would you like to rate?", max_chars = 12)
 course = ''.join(course.split()).upper()
-user_input2 = st.text_input(f"What did you think about {course}", max_chars = 100)
+user_input2 = st.text_input(f"What did you think about {course}?", max_chars = 100)
 st.write('\n')
 button1 = st.button("Click here for the model to provide your sentiment.")
 sentiment = make_prediction(lr_model, user_input2, True)
@@ -43,7 +43,7 @@ sentiment = round(5 * sentiment, 1)
 
 if sentiment > 3:
     str_sentiment = 'Glad you liked the course!'
-else:   str_sentiment = 'Thanks for the feedback, we will use it to improve the course'
+else:   str_sentiment = 'Thanks for the feedback, we will use it to improve the course.'
 st.write('\n')
 if button1: 
     st.write(str_sentiment)
