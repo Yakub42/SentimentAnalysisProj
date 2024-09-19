@@ -12,4 +12,4 @@ For effectiveness and simplicity, I trained the three most popular (basic) ML mo
 Calibration was attempted on the model, but only made the model less calibrated.
 
 ## Summary
-The best model- Log reg on BOW, was used in the streamlit website. Feel free to check out the performance, and comment your suggestions on how to improve the app and more functions to add.
+The best model- Log reg on BOW, was used in the streamlit website. Feel free to check out the performance, and comment your suggestions on how to improve the app and more functionalities to add.
