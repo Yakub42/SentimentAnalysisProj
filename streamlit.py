@@ -29,7 +29,7 @@ def make_prediction(model, input_text: str, proba=False) -> float:
     return model.predict(vect.transform([text]))
 
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']*20
-st.write("## Welcome to course sentiment analyser")
+st.write("## Sentiment-Based Course Rating System")
 
 rated_courses = pd.read_csv('ratedCourses.csv', index_col = 0)
 
